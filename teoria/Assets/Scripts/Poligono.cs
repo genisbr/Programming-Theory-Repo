@@ -11,10 +11,11 @@ public class Poligono : MonoBehaviour
     protected int NumVertices { get => numVertices; set => numVertices = value; }
     protected float MedidaLado { get => medidaLado; set => medidaLado = value; }
 
-    public Poligono() { }
+    public Poligono() { Debug.Log("Public Poligono"); }
 
     public Poligono(int numVertices,float medidaLado)
     {
+        Debug.Log("Public Poligono con parametros");
         NumVertices = numVertices;
         MedidaLado = medidaLado;
     }
@@ -32,9 +33,19 @@ public class Poligono : MonoBehaviour
     {
         return 0;
     }
-    public virtual String Descripción()
+    public virtual String Descripcion()
     {
         return "Vertex Number: " + NumVertices + "\n "+
                "Size Length: " + MedidaLado;
     }
+    public void SetNumSides(int numVertex)
+    {
+        this.NumVertices = numVertex;
+    }
+    public void SetLengthSide(int medidaLado)
+    {
+        this.MedidaLado = medidaLado;
+    }
+
+
 }

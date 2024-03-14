@@ -14,4 +14,5 @@ public class Cuadrado : Poligono
     { 
         return Mathf.Pow(MedidaLado, 2);
     }
+
 }

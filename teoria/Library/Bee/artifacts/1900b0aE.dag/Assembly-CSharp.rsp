@@ -360,6 +360,8 @@
 "Assets/Scripts/Pentagono.cs"
 "Assets/Scripts/PerimeterCalculator.cs"
 "Assets/Scripts/Poligono.cs"
+"Assets/Scripts/PracticeManager.cs"
+"Assets/Scripts/StartGameManager.cs"
 "Assets/Scripts/Triangulo.cs"
 -langversion:9.0
 

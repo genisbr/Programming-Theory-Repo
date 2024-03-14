@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject MenuScreen;
+    public GameObject PracticeScreen;
+    public GameObject GameScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,15 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void StartPractice()
+    {
+        MenuScreen.SetActive(false);
+        PracticeScreen.SetActive(true);
+    }
+    public void StartGame()
+    {
+        MenuScreen.SetActive(false);
+        GameScreen.SetActive(true);
     }
 }
